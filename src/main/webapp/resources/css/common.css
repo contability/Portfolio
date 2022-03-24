@@ -27,12 +27,10 @@ main{
 
 article{
 	width: 80%;
-	text-align: center;
 	position: relative;
 }
 
 #page_container{
-	/* height : 1000%; */
 	height : 100%;
 	position: relative;
 }
@@ -48,8 +46,34 @@ article{
 	position: fixed;
 }
 
+#img_project01{
+	height : 43%;
+	top : 32%;
+	left: 13%;
+}
+
+#img_project02{
+	height : 50% !important;
+	left : -15%;
+	top : 48%;
+}
+
+.introduce_imgs{
+	height: 60% !important;
+}
+
+.skill_imgs{
+	margin-left: 10%;
+	width : 100%;
+}
+
+.skill_imgs > img{
+	height: 125px !important;
+	width: 125px !important;
+}
+
 .content_section{
-	width: 60%;
+	width: 80%;
 	position: fixed;
 }
 
@@ -59,29 +83,51 @@ article{
 
 .content_section img{
 	position: absolute;
+	margin-left: 45%;
 	height : 100%;
+}
+
+.content_text{
+	position: absolute;
+	z-index: 998;
 }
 
 .c_yelloding{
 	background-color: #DDA94B;
 }
 
-.c_blueding{
+.c_blueding_b{
 	color: #1E4174;
 	font-weight: bold;
 	font-size: x-large;
 }
 
-.r_90 {
-	transform : rotate(90deg);
+.c_blueding_s{
+	color: #1E4174;
+	font-weight: bold;
+	font-size: small;
 }
 
-.w_10per{
-	height : 100%;
-	width : 10%;
+.te_r{
+	text-align: right;
 }
 
-.w_90per{
-	height : 100%;
-	width : 90%;
+.r_90{
+	transform: rotate(90deg);
+}
+
+.l_25per{
+	left: 25%;
+}
+
+.l_27per{
+	left: 27%;
+}
+
+.t_7per{
+	top: 7%;
+}
+
+.p_b_20{
+	padding-bottom: 20px;
 }
