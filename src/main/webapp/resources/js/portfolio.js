@@ -10,9 +10,11 @@ let portFolioObj = {
 	
 	size : {
 		winHeight : null,
-		pageHeight : null
-		
+		pageHeight : null,
+		winWidth : null
 	},
+	
+	pageCnt : null,
 	
 	init : function(){
 		let that = this;
@@ -50,6 +52,26 @@ let portFolioObj = {
 		that.initClip();
 		that.textSetting();
 		
+		let menuNavs = $('.menu_nav');
+		
+		for(let i = 0; i < menuNavs.length; i++){
+			let left = 20 + (i * 13.33);
+			$(menuNavs[i]).css('left', left + '%');
+		}
+		
+		$("body").css('overflow-x','hidden');
+		
+		$("#menu_main > div").addClass("c_yelloding");
+		$("#menu_main > div").css("display", "relative");
+		$("#menu_main").css("width", "0%");
+		$("#menu_main > div").css("width", "100%");
+		$("#menu_main > div").css("height", that.size.winHeight * 2);
+		
+		$('#top_arrows').parent().css('height', '1%');
+		$('#top_arrows').parent().css('left', '42%');
+		
+		$('#menu_main').hide();
+		
 	},
 	
 	textSetting : function(){
@@ -57,7 +79,7 @@ let portFolioObj = {
 		
 		$(".content_text").eq(1).css('top', that.size.winHeight * 2);
 		
-		$(".content_text").eq(2).css('top', that.size.winHeight * 2.3);
+		$(".content_text").eq(2).css('top', that.size.winHeight * 2.45);
 		
 		$(".content_text").eq(3).css('top', that.size.winHeight * 3);
 		$(".content_text").eq(3).css('left', "87%");
@@ -76,6 +98,8 @@ let portFolioObj = {
 		
 		$(".content_text").eq(9).css('top', that.size.winHeight * 6.5);
 		$(".content_text").eq(9).css('left', '18%');
+		
+		$(".content_text").eq(10).css('top', that.size.winHeight * 7);
 	},
 	
 	initClip : function(){
@@ -93,7 +117,8 @@ let portFolioObj = {
 	resizeHandler : function(){
 		let that = this;
 		
-		that.size.winHeight = $(window).height(); 
+		that.size.winHeight = $(window).height();
+		that.size.winWidth = $(window).width();
 		let contentPage = $('section');
 		
 		$(that.selector).height(that.size.winHeight * contentPage.length);
@@ -119,6 +144,75 @@ let portFolioObj = {
 		$(".orgFile_popup").click(function(){
 			window.open($(this).attr("src"));
 		});
+		
+		$('#a_menu').click(function(){
+			$('#content_main').hide();
+			$('#menu_main').show();
+			$('#menu_main > div').hide();
+			
+			
+			$('#menu_main').animate({
+				width : that.size.winWidth + 200,
+				height : that.size.winHeight + 200
+			},700,function(){
+				$('#menu_main > div').show();
+			});
+			
+			$("body").css('overflow-y','hidden');
+			
+			that.scrollToTop();
+		});
+		
+		$('#a_close').click(function(){
+			$('#menu_main > div').hide();
+			
+			$('#menu_main').animate({
+				width : that.size.winWidth * 0.88
+			},500,function(){
+				$('#content_main').show();
+				$('#menu_main').hide();
+			});
+			
+			$("body").css('overflow-y','auto');
+		});
+		
+		$('.menu_nav').hover(function(){
+			$(this).css('cursor', 'pointer');
+		});
+		
+		$('.menu_nav').click(function(){
+			that.linkNav($(this));
+		});
+		
+		$('#a_close').hover(function(){
+			$(this).css('cursor', 'pointer');
+		});
+		
+		$('#top_arrows').click(function(){
+			that.scrollToTop();
+		});
+	},
+	
+	linkNav : function(menu){
+		var that = this
+		
+		let scrVal = $(menu).attr('scroll-value');
+		
+		$('#menu_main > div').hide();
+			
+		$('#menu_main').animate({
+			width : that.size.winWidth * 0.88
+		},500,function(){
+			$('#content_main').show();
+			$('#menu_main').hide();
+			$("body").css('overflow-y','auto');
+			window.scrollTo(0, that.size.winHeight * scrVal);
+		});
+		
+	},
+	
+	scrollToTop : function(){
+		window.scrollTo(0, 0);
 	},
 	
 	scrollHandler : function(scrollTop){
@@ -127,6 +221,7 @@ let portFolioObj = {
 		let contentPage = $('.content_section');
 		
 		let pageCnt = parseInt(scrollTop / that.size.winHeight);
+		that.pageCnt = pageCnt;
 		
 		let top = 0;
 		let bottom = 0;

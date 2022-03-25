@@ -7,9 +7,9 @@
 
 <div id="page_container">
 	<div id="main_page">
-		<main>
+		<main id="content_main">
 			<aside id="left_side">
-				<a id="a_menu" href="#" class="c_blueding_b">menu</a>
+				<a id="a_menu" class="c_blueding_b cursor_p">menu</a>
 			</aside>
 			<article>
 				<section id="frst_section" class="c_yelloding"></section>
@@ -25,33 +25,33 @@
 				</section>
 				<section class="content_section">
 					<div class="skill_imgs">
-						<img alt="java" title="java" src="/resources/images/java_outline.png">
-						<img alt="spring-framework" title="spring-framework" src="/resources/images/spring-framework_outline.png">
-						<img alt="javascript" title="javascript" src="/resources/images/javascript_outline.png">
-						<img alt="jQuery" title="jQuery" src="/resources/images/jQuery_outline.png">
-						<img alt="jQueryUI" title="jQueryUI" src="/resources/images/jQueryUI_outline.png">
-						<img alt="msSQL" title="msSQL" src="/resources/images/msSQL_outline.png">
-						<img alt="postgreSQL" title="postgreSQL" src="/resources/images/postgreSQL_outline.png">
+						<img alt="java" title="java" src="<c:url value="/resources/images/java_outline.png"/>">
+						<img alt="spring-framework" title="spring-framework" src="<c:url value="/resources/images/spring-framework_outline.png"/>">
+						<img alt="javascript" title="javascript" src="<c:url value="/resources/images/javascript_outline.png"/>">
+						<img alt="jQuery" title="jQuery" src="<c:url value="/resources/images/jQuery_outline.png"/>">
+						<img alt="jQueryUI" title="jQueryUI" src="<c:url value="/resources/images/jQueryUI_outline.png"/>">
+						<img alt="msSQL" title="msSQL" src="<c:url value="/resources/images/msSQL_outline.png"/>">
+						<img alt="postgreSQL" title="postgreSQL" src="<c:url value="/resources/images/postgreSQL_outline.png"/>">
 					</div>
 				</section>
 				<section class="content_section">
 					<div class="skill_imgs">
-						<img alt="java" title="java" src="/resources/images/java_emblem.png">
-						<img alt="spring-framework" title="spring-framework" src="/resources/images/spring-framework_emblem.png">
-						<img alt="javascript" title="javascript" src="/resources/images/javascript_emblem.png">
-						<img alt="jQuery" title="jQuery" src="/resources/images/jQuery_emblem.png">
-						<img alt="jQueryUI" title="jQueryUI" src="/resources/images/jQueryUI_emblem.png">
-						<img alt="msSQL" title="msSQL" src="/resources/images/msSQL_emblem.png">
-						<img alt="postgreSQL" title="postgreSQL" src="/resources/images/postgreSQL_emblem.png">
+						<img alt="java" title="java" src="<c:url value="/resources/images/java_emblem.png"/>">
+						<img alt="spring-framework" title="spring-framework" src="<c:url value="/resources/images/spring-framework_emblem.png"/>">
+						<img alt="javascript" title="javascript" src="<c:url value="/resources/images/javascript_emblem.png"/>">
+						<img alt="jQuery" title="jQuery" src="<c:url value="/resources/images/jQuery_emblem.png"/>">
+						<img alt="jQueryUI" title="jQueryUI" src="<c:url value="/resources/images/jQueryUI_emblem.png"/>">
+						<img alt="msSQL" title="msSQL" src="<c:url value="/resources/images/msSQL_emblem.png"/>">
+						<img alt="postgreSQL" title="postgreSQL" src="<c:url value="/resources/images/postgreSQL_emblem.png"/>">
 					</div>
 				</section>
 				<section class="content_section">
 					<div>
-						<a href="#">
-							<img id="img_project01" class="orgFile_popup" alt="project01" src="/resources/images/project01.jpg">
+						<a>
+							<img id="img_project01" class="orgFile_popup cursor_p" alt="project01" src="<c:url value="/resources/images/project01.jpg"/>">
 						</a>
-						<a href="#">
-							<img id="img_project02" class="orgFile_popup" alt="project02" src="/resources/images/project02.jpg">
+						<a>
+							<img id="img_project02" class="orgFile_popup cursor_p" alt="project02" src="<c:url value="/resources/images/project02.jpg"/>">
 						</a>
 					</div>
 				</section>
@@ -152,6 +152,40 @@
 				<div class="c_blueding_b">
 					감사합니다.
 				</div>
+			</div>
+			<div class="content_text l_25per">
+				<img alt="To The Top" src="<c:url value="/resources/images/upward_arrows.png"/>" id="top_arrows">
+			</div>
+		</main>
+		<main id="menu_main" class="c_yelloding">
+			<div>
+				<ul>
+					<li>
+						<span id="a_close">
+							<img alt="close" src="<c:url value="/resources/images/image_close.png"/>">
+						</span>
+					</li>
+					<li>
+						<span id="menu_01" scroll-value="1.8" class="menu_nav c_blueding_b">
+							01. &lt;INTRODUCE/&gt;
+						</span>
+					</li>
+					<li>
+						<span id="menu_02" scroll-value="3.75" class="menu_nav c_blueding_b">
+							02. &lt;SKILLS/&gt;
+						</span>
+					</li>
+					<li>
+						<span id="menu_03" scroll-value="4.73" class="menu_nav c_blueding_b">
+							03. &lt;PROJECT/&gt;
+						</span>
+					</li>
+					<li>
+						<span id="menu_04" scroll-value="5.84" class="menu_nav c_blueding_b">
+							04. &lt;FINISH/&gt;
+						</span>
+					</li>
+				</ul>
 			</div>
 		</main>
 	</div>

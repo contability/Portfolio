@@ -19,6 +19,15 @@ body{
 	z-index: 999;
 }
 
+#top_arrows{
+	height: 77%;
+	cursor: pointer;
+}
+
+#frst_section{
+	height: 110% !important;
+}
+
 main{
 	height : 10%;
 	width: 100%;
@@ -56,6 +65,27 @@ article{
 	height : 50% !important;
 	left : -15%;
 	top : 48%;
+}
+
+#a_close{
+	position: absolute;
+	height: 3%;
+	top: 6.5%;
+	left: 1%;
+}
+
+#a_close > img{
+	height: 30%;
+}
+
+.cursor_p{
+	cursor: pointer;
+}
+
+.menu_nav{
+	position: absolute;
+	transform: rotate(90deg);
+	top: 7%;
 }
 
 .introduce_imgs{
