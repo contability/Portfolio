@@ -22,7 +22,10 @@ body{
 #top_arrows{
 	height: 77%; 
 	cursor: pointer;
+	animation: blink-effect 1s step-end infinite;
 }
+
+@keyframes blink-effect { 50% { opacity: 0; } }
 
 #frst_section{
 	height: 110% !important;
@@ -37,6 +40,22 @@ main{
 article{
 	width: 80%;
 	position: relative;
+}
+
+#github{
+	position: absolute;
+	height: 25%;
+	left: 82%;
+}
+
+#kakao{
+	position: absolute;
+	height: 25%;
+	left : 92%;
+}
+
+.link_img{
+	height: 100%;
 }
 
 #page_container{
@@ -88,18 +107,60 @@ article{
 	top: 7%;
 }
 
-.introduce_imgs{
-	height: 60% !important;
+#image01{
+	height: 63%;
+	top: 6%;
+	margin-left: 48%;
 }
+
+#image02{
+	height: 46%;
+	top: 24%;
+	left: 2%;
+}
+
+/* .introduce_imgs{
+	height: 60% !important;
+} */
+
+.progress-bar{
+	position: absolute;
+	width: 27%;
+	appearance: none;
+}
+
+.progress-ani{
+	animation : progress-animation 2s forwards;
+}
+
+@keyframes progress-animation 
+{ 
+	0% { width: 0%; } 
+	100% { width: 27%; } 
+}
+
+.progress-bar::-webkit-progress-bar { 
+	background:#f0f0f0; 
+	border-radius:10px; 
+	box-shadow: inset 3px 3px 10px #ccc; 
+} 
+
+.progress-bar::-webkit-progress-value { 
+	border-radius:10px; 
+	background: #1E4174; 
+	background: -webkit-linear-gradient(to right, #316bc0, #1E4174); 
+	background: linear-gradient(to right, #316bc0, #1E4174); 
+}
+
 
 .skill_imgs{
 	margin-left: 10%;
 	width : 100%;
 }
 
-.skill_imgs > img{
-	height: 125px !important;
-	width: 125px !important;
+.skill_imgs img{
+	height: 10% !important;
+	/* width: 125px !important; */
 }
 
 .content_section{
@@ -122,6 +183,27 @@ article{
 	z-index: 998;
 }
 
+.css-progressbar{
+	width: 80%;
+	animation : progressbar 2s ease-out;
+}
+
+
+
+
+#image02_sub{
+    height: 38%;
+    width: 25%;
+    left: 67%;
+    top: 51%;
+    position: absolute;
+    z-index: -10;
+}
+
+.c_yelloding_sub{
+	background-color: #DD7C52;
+}
+
 .c_yelloding{
 	background-color: #DDA94B;
 }
@@ -130,6 +212,12 @@ article{
 	color: #1E4174;
 	font-weight: bold;
 	font-size: x-large;
+}
+
+.c_blueding_xxxl{
+	color: #1E4174;
+	font-weight: bold;
+	font-size: 9em;
 }
 
 .c_blueding_s{
@@ -142,8 +230,17 @@ article{
 	text-align: right;
 }
 
+.ls_45{
+	padding-left: 2%;
+	letter-spacing: 45px;
+}
+
 .r_90{
 	transform: rotate(90deg);
+}
+
+.l_15per{
+	left: 15%;
 }
 
 .l_25per{

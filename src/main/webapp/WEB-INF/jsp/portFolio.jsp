@@ -15,34 +15,53 @@
 				<section id="frst_section" class="c_yelloding"></section>
 				<section class="content_section">
 					<div>
-						<img alt="image02" class="introduce_imgs" src="<c:url value="/resources/images/image02.png"/>">
+						<img alt="image01" class="introduce_imgs" src="<c:url value="/resources/images/image01.png"/>" id="image01">
+						<span class="c_yelloding_sub" id="image02_sub"></span>
 					</div>
 				</section>
 				<section class="content_section">
 					<div>
-						<img alt="image01" class="introduce_imgs" src="<c:url value="/resources/images/image01.png"/>">
+						<img alt="image02" class="introduce_imgs" src="<c:url value="/resources/images/image02.jpg"/>" id="image02" style="z-index: 10">
 					</div>
 				</section>
 				<section class="content_section">
 					<div class="skill_imgs">
 						<img alt="java" title="java" src="<c:url value="/resources/images/java_outline.png"/>">
-						<img alt="spring-framework" title="spring-framework" src="<c:url value="/resources/images/spring-framework_outline.png"/>">
 						<img alt="javascript" title="javascript" src="<c:url value="/resources/images/javascript_outline.png"/>">
-						<img alt="jQuery" title="jQuery" src="<c:url value="/resources/images/jQuery_outline.png"/>">
-						<img alt="jQueryUI" title="jQueryUI" src="<c:url value="/resources/images/jQueryUI_outline.png"/>">
 						<img alt="msSQL" title="msSQL" src="<c:url value="/resources/images/msSQL_outline.png"/>">
+						<img alt="spring-framework" title="spring-framework" src="<c:url value="/resources/images/spring-framework_outline.png"/>">
+						<img alt="jQuery" title="jQuery" src="<c:url value="/resources/images/jQuery_outline.png"/>">
 						<img alt="postgreSQL" title="postgreSQL" src="<c:url value="/resources/images/postgreSQL_outline.png"/>">
+						<%-- <img alt="jQueryUI" title="jQueryUI" src="<c:url value="/resources/images/jQueryUI_outline.png"/>"> --%>
 					</div>
 				</section>
 				<section class="content_section">
 					<div class="skill_imgs">
-						<img alt="java" title="java" src="<c:url value="/resources/images/java_emblem.png"/>">
-						<img alt="spring-framework" title="spring-framework" src="<c:url value="/resources/images/spring-framework_emblem.png"/>">
-						<img alt="javascript" title="javascript" src="<c:url value="/resources/images/javascript_emblem.png"/>">
-						<img alt="jQuery" title="jQuery" src="<c:url value="/resources/images/jQuery_emblem.png"/>">
-						<img alt="jQueryUI" title="jQueryUI" src="<c:url value="/resources/images/jQueryUI_emblem.png"/>">
-						<img alt="msSQL" title="msSQL" src="<c:url value="/resources/images/msSQL_emblem.png"/>">
-						<img alt="postgreSQL" title="postgreSQL" src="<c:url value="/resources/images/postgreSQL_emblem.png"/>">
+						<span>
+							<img alt="java" title="java" src="<c:url value="/resources/images/java_emblem.png"/>">
+							<progress class="progress-bar" value="35" min="0" max="100"></progress>
+						</span>
+						<span>
+							<img alt="javascript" title="javascript" src="<c:url value="/resources/images/javascript_emblem.png"/>">
+							<progress class="progress-bar" value="60" min="0" max="100"></progress>
+						</span>
+						<span>
+							<img alt="msSQL" title="msSQL" src="<c:url value="/resources/images/msSQL_emblem.png"/>">
+							<progress class="progress-bar" value="25" min="0" max="100"></progress>
+						</span>
+						<span>
+							<img alt="spring-framework" title="spring-framework" src="<c:url value="/resources/images/spring-framework_emblem.png"/>">
+							<progress class="progress-bar" value="30" min="0" max="100"></progress>
+						</span>
+						<span>
+							<img alt="jQuery" title="jQuery" src="<c:url value="/resources/images/jQuery_emblem.png"/>">
+							<progress class="progress-bar" value="60" min="0" max="100"></progress>
+						</span>
+						<span>
+							<img alt="postgreSQL" title="postgreSQL" src="<c:url value="/resources/images/postgreSQL_emblem.png"/>">
+							<progress class="progress-bar" value="55" min="0" max="100"></progress>
+						</span>
+						<%-- <img alt="jQueryUI" title="jQueryUI" src="<c:url value="/resources/images/jQueryUI_emblem.png"/>"> --%>
 					</div>
 				</section>
 				<section class="content_section">
@@ -59,11 +78,11 @@
 				</section>
 			</article>
 			<div class="content_text l_25per t_7per">
-				<div class="c_blueding_b">
-					안녕하세요.
+				<div class="c_blueding_xxxl">
+					PORTFOLIO
 				</div>
-				<div class="c_blueding_b">
-					개발자 정신형의 포트폴리오 입니다.
+				<div class="c_blueding_b ls_45">
+					JUNGSHINHYUNG
 				</div>
 			</div>
 			<div class="content_text l_25per r_90">
@@ -74,12 +93,21 @@
 					자기소개
 				</div>
 			</div>
-			<div class="content_text l_25per">
+			<div class="content_text l_15per">
+				<div class="c_blueding_s">
+					2년차 개발자로 GIS 프로젝트
+				</div>
 				<div class="c_blueding_s p_b_20">
-					2년차 개발자로 GIS 프로젝트 내 SI/SM 업무를 수행 해왔습니다.
+					SI/SM 업무를 수행 해왔습니다.
 				</div>
 				<div class="c_blueding_s">
-					요구사항 기술부터 설계, 구현, 테스트, 배포, 유지보수까지 전반적으로 수행하였습니다.
+					요구사항 기술부터
+				</div>
+				<div class="c_blueding_s">
+					설계, 구현, 테스트, 배포, 유지보수까지
+				</div>
+				<div class="c_blueding_s">
+					전반적인 개발 업무를 진행 하였습니다.
 				</div>
 			</div>
 			<div class="content_text l_25per r_90">
@@ -149,8 +177,16 @@
 				<div class="c_blueding_s p_b_20">
 					지금도, 그리고 앞으로도 저의 무기로 노력하여 제자리에 멈춰있지 않는 개발자가 되도록 노력하겠습니다.
 				</div>
-				<div class="c_blueding_b">
+				<div class="c_blueding_b p_b_20">
 					감사합니다.
+				</div>
+				<div class="c_blueding_b">
+					<span id="github">
+						<img alt="github" src="<c:url value="/resources/images/image_github.png"/>" class="link_img cursor_p">
+					</span>
+					<span id="kakao">
+						<img alt="kakao" src="<c:url value="/resources/images/image_kakao.png"/>" class="link_img cursor_p">
+					</span>
 				</div>
 			</div>
 			<div class="content_text l_25per">

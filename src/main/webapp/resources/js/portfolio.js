@@ -36,14 +36,36 @@ let portFolioObj = {
 		
 		let skillImgs = $(".skill_imgs");
 		for(let j = 0; j < skillImgs.length; j++){
-			let imgs = $(skillImgs).eq(j).children("img");
+			let imgs = $(skillImgs).eq(j).find("img");
 			for(let i = 0; i < imgs.length; i++){
-				if(i > 4){
-					$(imgs[i]).css("left", -35 + ((i - 5) * 25) + "%");
-					$(imgs[i]).css("top", 75 + "%");
+				if(i < 3){
+					//$(imgs[i]).css("left", -35 + ((i - 5) * 25) + "%");
+					//$(imgs[i]).css("top", 75 + "%");
+					
+					$(imgs[i]).css("left", -35 + "%");
+					$(imgs[i]).css("top", 45 + ( i * 17) + "%");
 				}else{
-					$(imgs[i]).css("left", -35 + ( i * 25) + "%");
-					$(imgs[i]).css("top", 45 + "%");
+					//$(imgs[i]).css("left", -35 + ( i * 25) + "%");
+					//$(imgs[i]).css("top", 45 + "%");
+					
+					$(imgs[i]).css("left", 10 + "%");
+					$(imgs[i]).css("top", 45 + ( (i - 3) * 17) + "%");
+				}
+			}
+			let prgrs = $(skillImgs).eq(1).find(".progress-bar");
+			for(let i = 0; i < prgrs.length; i++){
+				if(i < 3){
+					//$(imgs[i]).css("left", -35 + ((i - 5) * 25) + "%");
+					//$(imgs[i]).css("top", 75 + "%");
+					
+					$(prgrs[i]).css("left", 18 + "%");
+					$(prgrs[i]).css("top", 49 + ( i * 17) + "%");
+				}else{
+					//$(imgs[i]).css("left", -35 + ( i * 25) + "%");
+					//$(imgs[i]).css("top", 45 + "%");
+					
+					$(prgrs[i]).css("left", 65 + "%");
+					$(prgrs[i]).css("top", 49 + ( (i - 3) * 17) + "%");
 				}
 			}
 		}
@@ -150,7 +172,6 @@ let portFolioObj = {
 			$('#menu_main').show();
 			$('#menu_main > div').hide();
 			
-			
 			$('#menu_main').animate({
 				width : that.size.winWidth + 200,
 				height : that.size.winHeight + 200
@@ -191,10 +212,28 @@ let portFolioObj = {
 		$('#top_arrows').click(function(){
 			that.scrollToTop();
 		});
+		
+		$('.link_img').click(function(){
+			that.popupLink($(this).parent().attr("id"));
+		});
+	},
+	
+	popupLink : function(serviceId){
+		let that = this;
+		
+		let url = '';
+		
+		if(serviceId == "github"){
+			url = "https://github.com/contability";
+		}else{
+			url = "https://open.kakao.com/o/sMNmzS7d";
+		}
+		
+		window.open(url);
 	},
 	
 	linkNav : function(menu){
-		var that = this
+		let that = this
 		
 		let scrVal = $(menu).attr('scroll-value');
 		
@@ -212,7 +251,17 @@ let portFolioObj = {
 	},
 	
 	scrollToTop : function(){
-		window.scrollTo(0, 0);
+		
+		let scrTp = $(window).scrollTop();
+		
+		let duration = scrTp/120000;
+		
+		for(let i = scrTp; i > -1; i--){
+			setTimeout(function(){
+				window.scrollTo(0, i)
+			}, duration);
+		}
+		
 	},
 	
 	scrollHandler : function(scrollTop){
@@ -245,6 +294,8 @@ let portFolioObj = {
 			top = (that.size.winHeight * pageCnt) - scrollTop;
 			bottom = that.size.winHeight;
 			that.imgClip(contentPage[pageCnt], $(contentPage[pageCnt]).height() + top, bottom);
+			
+			$('.progress-bar').addClass('progress-ani');
 		}else if(pageCnt == 4){
 			top = (that.size.winHeight * pageCnt) - scrollTop;
 			bottom = that.size.winHeight;
@@ -266,6 +317,12 @@ let portFolioObj = {
 			top = (that.size.winHeight * pageCnt) - scrollTop;
 			bottom = that.size.winHeight;
 			that.imgClip(contentPage[pageCnt], $(contentPage[pageCnt]).height() + top, bottom);
+		}
+		
+		if(scrollTop > that.size.pageHeight - that.size.winHeight){
+			$(".content_text").eq(8).hide();
+		}else{
+			$(".content_text").eq(8).show();
 		}
 		
 		console.log("window Height is : " + that.size.winHeight);
