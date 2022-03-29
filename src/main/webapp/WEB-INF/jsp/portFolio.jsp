@@ -159,7 +159,7 @@
 					- easyUI 라이브러리를 활용한 UI 구현
 				</div>
 				<div class="c_blueding_s">
-					- SOAP, restAPI 등을 활용한 외부 연계
+					- SOAP, REST API 등을 활용한 외부 연계
 				</div>
 				<div class="c_blueding_s p_b_20">
 					- javaScript를 사용한 동적 컨텐츠 개발
@@ -189,7 +189,7 @@
 					현재는 정보처리기사와 node.js, React.js 공부를 병행중인 초급 개발자입니다. 
 				</div>
 				<div class="c_blueding_b">
-					저에게 가장 큰 무기라고 생각하는 것은 꾸준함입니다.
+					저의 가장 큰 무기라고 생각하는 것은 꾸준함입니다.
 				</div>
 				<div class="c_blueding_s">
 					끊임 없이 변화하는 개발 직군에서 가장 필요한 것 또한 꾸준함이라고 생각하며
