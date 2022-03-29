@@ -73,6 +73,7 @@ let portFolioObj = {
 		that.resizeHandler();
 		that.initClip();
 		that.textSetting();
+		that.projectImgSetting();
 		
 		let menuNavs = $('.menu_nav');
 		
@@ -94,6 +95,43 @@ let portFolioObj = {
 		
 		$('#menu_main').hide();
 		
+	},
+	
+	projectImgSetting : function(){
+		let that = this;
+		
+		let projectImgs = $('.project_imgs');
+		
+		let top = 29;
+		let left = 39;
+		
+		let addLeft = 32;
+		
+		for(let i = 0; i < projectImgs.length; i++){
+			
+			switch(i){
+				case 0:
+					$(projectImgs[i]).css('left', '42%');
+					$(projectImgs[i]).css('top', '29%');
+				break;
+				case 1:
+					$(projectImgs[i]).css('left', '71%');
+					$(projectImgs[i]).css('top', '29%');
+				break;
+				case 2:
+					$(projectImgs[i]).css('left', '13%');
+					$(projectImgs[i]).css('top', '62%');
+				break;
+				case 3:
+					$(projectImgs[i]).css('left', '42%');
+					$(projectImgs[i]).css('top', '62%');
+				break;
+				case 4:
+					$(projectImgs[i]).css('left', '71%');
+					$(projectImgs[i]).css('top', '62%');
+				break;
+			}
+		}
 	},
 	
 	textSetting : function(){
@@ -216,6 +254,20 @@ let portFolioObj = {
 		$('.link_img').click(function(){
 			that.popupLink($(this).parent().attr("id"));
 		});
+		
+		$('.project_imgs').click(function(){
+			let imgTag = $(this).children().children();
+			that.orgImgsOpen(imgTag);
+		});
+	},
+	
+	orgImgsOpen : function(imgTag){
+		
+		let location = $(imgTag).attr('src');
+		
+		window.open(location);
+		
+		
 	},
 	
 	popupLink : function(serviceId){

@@ -65,12 +65,32 @@
 					</div>
 				</section>
 				<section class="content_section">
-					<div>
+					<div class="project_imgs cursor_p">
 						<a>
-							<img id="img_project01" class="orgFile_popup cursor_p" alt="project01" src="<c:url value="/resources/images/project01.jpg"/>">
+							<img class="project_img" class="orgFile_popup cursor_p" alt="project01" src="<c:url value="/resources/images/project01.jpg"/>">
 						</a>
+						<%-- <a>
+							<img class="project_img" class="orgFile_popup cursor_p" alt="project02" src="<c:url value="/resources/images/project02.jpg"/>">
+						</a> --%>
+					</div>
+					<div class="project_imgs cursor_p">
 						<a>
-							<img id="img_project02" class="orgFile_popup cursor_p" alt="project02" src="<c:url value="/resources/images/project02.jpg"/>">
+							<img class="project_img" class="orgFile_popup cursor_p" alt="project01" src="<c:url value="/resources/images/project01.jpg"/>">
+						</a>
+					</div>
+					<div class="project_imgs cursor_p">
+						<a>
+							<img class="project_img" class="orgFile_popup cursor_p" alt="project02" src="<c:url value="/resources/images/project01.jpg"/>">
+						</a>
+					</div>
+					<div class="project_imgs cursor_p">
+						<a>
+							<img class="project_img" class="orgFile_popup cursor_p" alt="project03" src="<c:url value="/resources/images/project01.jpg"/>">
+						</a>
+					</div>
+					<div class="project_imgs cursor_p">
+						<a>
+							<img class="project_img" class="orgFile_popup cursor_p" alt="project04" src="<c:url value="/resources/images/project01.jpg"/>">
 						</a>
 					</div>
 				</section>
@@ -142,7 +162,7 @@
 					- SOAP, restAPI 등을 활용한 외부 연계
 				</div>
 				<div class="c_blueding_s p_b_20">
-					- 가장 구현 비중이 큰 javaScript를 사용한 동적 컨텐츠 개발
+					- javaScript를 사용한 동적 컨텐츠 개발
 				</div>
 				<div class="c_blueding_s">
 					해당 내용으로 GIS 공간정보 활용 관련 총 40여건의 SI/SM 웹 어플리케이션 프로젝트 수행
@@ -182,10 +202,10 @@
 				</div>
 				<div class="c_blueding_b">
 					<span id="github">
-						<img alt="github" src="<c:url value="/resources/images/image_github.png"/>" class="link_img cursor_p">
+						<img alt="github" title="github" src="<c:url value="/resources/images/image_github.png"/>" class="link_img cursor_p">
 					</span>
 					<span id="kakao">
-						<img alt="kakao" src="<c:url value="/resources/images/image_kakao.png"/>" class="link_img cursor_p">
+						<img alt="kakao" title="kakao" src="<c:url value="/resources/images/image_kakao.png"/>" class="link_img cursor_p">
 					</span>
 				</div>
 			</div>

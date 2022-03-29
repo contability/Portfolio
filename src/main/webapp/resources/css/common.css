@@ -74,7 +74,8 @@ article{
 	position: fixed;
 }
 
-#img_project01{
+
+/* #img_project01{
 	height : 43%;
 	top : 32%;
 	left: 13%;
@@ -84,7 +85,7 @@ article{
 	height : 50% !important;
 	left : -15%;
 	top : 48%;
-}
+} */
 
 #a_close{
 	position: absolute;
@@ -95,6 +96,18 @@ article{
 
 #a_close > img{
 	height: 30%;
+}
+
+.project_imgs{
+	position: absolute;
+	width: 20%;
+    height: 26% !important;
+    border: 4px solid #1E4174;
+}
+
+.project_img{
+	margin-left: 0 !important;
+	
 }
 
 .cursor_p{
@@ -187,9 +200,6 @@ article{
 	width: 80%;
 	animation : progressbar 2s ease-out;
 }
-
-
-
 
 #image02_sub{
     height: 38%;
