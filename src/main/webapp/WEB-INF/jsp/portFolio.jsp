@@ -75,22 +75,22 @@
 					</div>
 					<div class="project_imgs cursor_p">
 						<a>
-							<img class="project_img" class="orgFile_popup cursor_p" alt="project01" src="<c:url value="/resources/images/project01.jpg"/>">
+							<img class="project_img" class="orgFile_popup cursor_p" alt="project02" src="<c:url value="/resources/images/project02.jpg"/>">
 						</a>
 					</div>
 					<div class="project_imgs cursor_p">
 						<a>
-							<img class="project_img" class="orgFile_popup cursor_p" alt="project02" src="<c:url value="/resources/images/project01.jpg"/>">
+							<img class="project_img" class="orgFile_popup cursor_p" alt="project03" src="<c:url value="/resources/images/project03.jpg"/>">
 						</a>
 					</div>
 					<div class="project_imgs cursor_p">
 						<a>
-							<img class="project_img" class="orgFile_popup cursor_p" alt="project03" src="<c:url value="/resources/images/project01.jpg"/>">
+							<img class="project_img" class="orgFile_popup cursor_p" alt="project04" src="<c:url value="/resources/images/project04.jpg"/>">
 						</a>
 					</div>
 					<div class="project_imgs cursor_p">
 						<a>
-							<img class="project_img" class="orgFile_popup cursor_p" alt="project04" src="<c:url value="/resources/images/project01.jpg"/>">
+							<img class="project_img" class="orgFile_popup cursor_p" alt="project05" src="<c:url value="/resources/images/project05.jpg"/>">
 						</a>
 					</div>
 				</section>
