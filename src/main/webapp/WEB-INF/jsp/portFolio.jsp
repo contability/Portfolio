@@ -161,6 +161,9 @@
 				<div class="c_blueding_s">
 					- SOAP, REST API 등을 활용한 외부 연계
 				</div>
+				<div class="c_blueding_s">
+					- 리포팅 툴을 활용한 통계 출력
+				</div>
 				<div class="c_blueding_s p_b_20">
 					- javaScript를 사용한 동적 컨텐츠 개발
 				</div>
@@ -183,10 +186,10 @@
 			</div>
 			<div class="content_text l_25per">
 				<div class="c_blueding_s">
-					얼마 전 SQLD 취득을 마치고 
+					얼마 전 SQLD와 정보처리산업기사 필기 취득을 마치고 
 				</div>
 				<div class="c_blueding_s p_b_20">
-					현재는 정보처리기사와 node.js, React.js 공부를 병행중인 초급 개발자입니다. 
+					현재는 정보처리기사 실기와 node.js, React.js 공부를 병행중인 초급 개발자입니다. 
 				</div>
 				<div class="c_blueding_b">
 					저의 가장 큰 무기라고 생각하는 것은 꾸준함입니다.
