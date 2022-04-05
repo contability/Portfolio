@@ -39,15 +39,9 @@ let portFolioObj = {
 			let imgs = $(skillImgs).eq(j).find("img");
 			for(let i = 0; i < imgs.length; i++){
 				if(i < 3){
-					//$(imgs[i]).css("left", -35 + ((i - 5) * 25) + "%");
-					//$(imgs[i]).css("top", 75 + "%");
-					
 					$(imgs[i]).css("left", -35 + "%");
 					$(imgs[i]).css("top", 45 + ( i * 17) + "%");
 				}else{
-					//$(imgs[i]).css("left", -35 + ( i * 25) + "%");
-					//$(imgs[i]).css("top", 45 + "%");
-					
 					$(imgs[i]).css("left", 10 + "%");
 					$(imgs[i]).css("top", 45 + ( (i - 3) * 17) + "%");
 				}
@@ -55,15 +49,9 @@ let portFolioObj = {
 			let prgrs = $(skillImgs).eq(1).find(".progress-bar");
 			for(let i = 0; i < prgrs.length; i++){
 				if(i < 3){
-					//$(imgs[i]).css("left", -35 + ((i - 5) * 25) + "%");
-					//$(imgs[i]).css("top", 75 + "%");
-					
 					$(prgrs[i]).css("left", 18 + "%");
 					$(prgrs[i]).css("top", 49 + ( i * 17) + "%");
 				}else{
-					//$(imgs[i]).css("left", -35 + ( i * 25) + "%");
-					//$(imgs[i]).css("top", 45 + "%");
-					
 					$(prgrs[i]).css("left", 65 + "%");
 					$(prgrs[i]).css("top", 49 + ( (i - 3) * 17) + "%");
 				}

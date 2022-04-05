@@ -32,7 +32,6 @@
 						<img alt="spring-framework" title="spring-framework" src="<c:url value="/resources/images/spring-framework_outline.png"/>">
 						<img alt="jQuery" title="jQuery" src="<c:url value="/resources/images/jQuery_outline.png"/>">
 						<img alt="postgreSQL" title="postgreSQL" src="<c:url value="/resources/images/postgreSQL_outline.png"/>">
-						<%-- <img alt="jQueryUI" title="jQueryUI" src="<c:url value="/resources/images/jQueryUI_outline.png"/>"> --%>
 					</div>
 				</section>
 				<section class="content_section">
@@ -61,7 +60,6 @@
 							<img alt="postgreSQL" title="postgreSQL" src="<c:url value="/resources/images/postgreSQL_emblem.png"/>">
 							<progress class="progress-bar" value="55" min="0" max="100"></progress>
 						</span>
-						<%-- <img alt="jQueryUI" title="jQueryUI" src="<c:url value="/resources/images/jQueryUI_emblem.png"/>"> --%>
 					</div>
 				</section>
 				<section class="content_section">
@@ -69,9 +67,6 @@
 						<a>
 							<img class="project_img" class="orgFile_popup cursor_p" alt="project01" src="<c:url value="/resources/images/project01.jpg"/>">
 						</a>
-						<%-- <a>
-							<img class="project_img" class="orgFile_popup cursor_p" alt="project02" src="<c:url value="/resources/images/project02.jpg"/>">
-						</a> --%>
 					</div>
 					<div class="project_imgs cursor_p">
 						<a>
@@ -80,7 +75,7 @@
 					</div>
 					<div class="project_imgs cursor_p">
 						<a>
-							<img class="project_img" class="orgFile_popup cursor_p" alt="project03" src="<c:url value="/resources/images/project03.jpg"/>">
+							<img class="project_img" class="orgFile_popup cursor_p" alt="project03" src="<c:url value="/resources/images/project03.png"/>">
 						</a>
 					</div>
 					<div class="project_imgs cursor_p">
@@ -153,22 +148,22 @@
 			</div>
 			<div class="content_text l_25per">
 				<div class="c_blueding_s">
-					- spring framework MVC 패턴으로 SW 개발
-				</div>
-				<div class="c_blueding_s">
-					- easyUI 라이브러리를 활용한 UI 구현
+					- spring framework MVC 패턴 SW 개발
 				</div>
 				<div class="c_blueding_s">
 					- SOAP, REST API 등을 활용한 외부 연계
 				</div>
 				<div class="c_blueding_s">
-					- 리포팅 툴을 활용한 통계 출력
-				</div>
-				<div class="c_blueding_s p_b_20">
-					- javaScript를 사용한 동적 컨텐츠 개발
+					- javaScript 및 다양한 라이브러리를 사용하여 동적 컨텐츠 개발
 				</div>
 				<div class="c_blueding_s">
-					해당 내용으로 GIS 공간정보 활용 관련 총 40여건의 SI/SM 웹 어플리케이션 프로젝트 수행
+					- easyUI 라이브러리를 활용한 UI 구현
+				</div>
+				<div class="c_blueding_s p_b_20">
+					- 리포팅 툴을 활용한 리포트 출력
+				</div>
+				<div class="c_blueding_s">
+					해당 기술을 토대로 피자헛 상권관리 시스템, 한국수력원자력, 강릉시 등 40여건의 SI/SM 프로젝트 수행
 				</div>
 			</div>
 			<div class="content_text l_25per r_90">
@@ -189,7 +184,7 @@
 					얼마 전 SQLD와 정보처리산업기사 필기 취득을 마치고 
 				</div>
 				<div class="c_blueding_s p_b_20">
-					현재는 정보처리기사 실기와 node.js, React.js 공부를 병행중인 초급 개발자입니다. 
+					쌓아온 javaScript 지식을 바탕으로 React.js를 익히고 있는 초급 개발자입니다.
 				</div>
 				<div class="c_blueding_b">
 					저의 가장 큰 무기라고 생각하는 것은 꾸준함입니다.
@@ -197,11 +192,11 @@
 				<div class="c_blueding_s">
 					끊임 없이 변화하는 개발 직군에서 가장 필요한 것 또한 꾸준함이라고 생각하며
 				</div>
-				<div class="c_blueding_s p_b_20">
-					지금도, 그리고 앞으로도 저의 무기로 노력하여 제자리에 멈춰있지 않는 개발자가 되도록 노력하겠습니다.
+				<div class="c_blueding_s">
+					지금 당장은 모자랄 수 있겠지만 지금도, 앞으로도 저의 무기로
 				</div>
-				<div class="c_blueding_b p_b_20">
-					감사합니다.
+				<div class="c_blueding_s p_b_20">
+					누구보다 빠르게 적응하여 주위에 도움이 되는 동료가, 그리고 제자리에 멈춰있지 않는 개발자가 되고자 합니다.
 				</div>
 				<div class="c_blueding_b">
 					<span id="github">
